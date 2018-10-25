@@ -3,10 +3,8 @@
 [image1]: ./output_images/undistorted_lane_image.png "Undistorted"
 [image2]: ./output_images/combined_binary_image.png "Combined Binary"
 [image3]: ./output_images/perspective_transform.png "Perspective Transform"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[image4]: ./output_images/lane_curvature.png "Lane Curvature"
+[video1]: ./output_videos/project_video_output.mp4 "Video"
 
 
 # Camera Calibration
@@ -35,4 +33,18 @@ Once I got the combined S channel and binary image from step 2. I used that imag
 
 ![alt text][image3]
 
+4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
+Once I applied perspective transform, I got the birds eye view of the image. This helps us easily detect the lane lines even if there is any curvature. First I computed the histogram which helps us find the position of the image where the lane lines exist. We will start with these points and detect the rest of the lines using sliding window.
+
+5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
+
+First I computed the polynomial of each image and then compute the left and right fits. I used these two points to fit them on the image and computed the left and right curvatures. 
+
+6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
+
+![alt text][image4]
+
+Pipeline (video)
+
+![alt text][video1]
