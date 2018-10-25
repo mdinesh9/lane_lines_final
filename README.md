@@ -6,6 +6,8 @@ First, I computed the calibration points using the chessboard images and then ap
 # Pipeline
 1. Provide an example of a distortion-corrected image.
 
+<img href="./output_images/undistorted_lane_image.png" title="Undistorted Lane">
+
 [//]: # (Image References)
 
 [image1]: ./output_images/undistorted_lane_image.png "Undistorted"
