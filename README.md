@@ -47,4 +47,4 @@ First I computed the polynomial of each image and then compute the left and righ
 
 Pipeline (video)
 
-![alt text][video1]
+Hyperlink - [click here][video1]
