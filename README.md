@@ -48,3 +48,8 @@ First I computed the polynomial of each image and then compute the left and righ
 Pipeline (video)
 
 Hyperlink - [click here][video1]
+
+## Discussion
+1. Briefly discuss any problems / issues you faced in your implementation of this project. Where will your pipeline likely fail? What could you do to make it more robust?
+
+The problems that I discovered intially were due to the lightning conditions, and shadows. By changing the threshold values, I was able to solve the challenge for the original project video. I also discovered that the challenge related videos had lane lines with varying pixel values when compared with the original project video. I solved this problem by normalizing the pixels. In the harder video, the current code doesn't perform that well. May be, according to my knowledge, applying deep learning techniques like semantic segmentation would help us solve the problem. 
